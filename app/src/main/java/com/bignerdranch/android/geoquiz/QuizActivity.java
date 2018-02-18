@@ -48,15 +48,10 @@ public class QuizActivity extends AppCompatActivity {
             return;
         }
         if (requestCode == REQUEST_CODE_CHEAT) {
-            if (resultCode != Activity.RESULT_OK) {
-                return;
-            }
-            if (requestCode == REQUEST_CODE_CHEAT) {
                 if (data == null) {
                     return;
                 }
                 mIsCheater = CheatActivity.wasAnswerShown(data);
-            }
         }
     }
     @Override
